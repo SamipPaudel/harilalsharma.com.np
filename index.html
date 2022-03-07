@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samip Paudel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3779729c17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="index-head">
+        <nav>
+            <a href="index.html"><img src="assets/samip-logo.png"></a>
+            <div class="nav-links" id="NavLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About Me">About Me</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Connect">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <div class="main_text">
+            <h1>Samip Paudel</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolor adipisci quae sit porro accusamus
+                quidem asperiores est eligendi a!</p>
+
+        </div>
+
+
+
+
+    </section>
+    <!-- About Me-->
+    <a name="About Me"></a>
+    <section class="about-me">
+        <h3>
+            About Me
+        </h3>
+        <div class="me-box">
+
+            <img src="assets/about-me.png" alt="image of a person">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae similique cupiditate placeat sequi
+                rerum quibusdam officia perferendis, sit voluptatum nihil non explicabo ex quod itaque soluta magnam
+                repudiandae deleniti aut nisi fugiat totam laudantium dolorem ratione numquam. Similique nisi,
+                voluptatem dolorem veritatis obcaecati dolorum? Repudiandae consequatur voluptas laudantium repellat,
+                nesciunt harum doloribus, iusto, incidunt dolorum possimus maiores perspiciatis. Laudantium illo,
+                architecto hic quis laborum doloremque deleniti nihil praesentium dolorem esse soluta quos ipsa atque
+                vitae ad ipsam incidunt aliquam ducimus dolor eos? Quia consectetur fuga fugiat distinctio error minima
+                repellendus aliquid laudantium eum modi iste, doloremque pariatur ipsum aperiam autem.
+            </p>
+        </div>
+
+    </section>
+    <a name="Skills"></a>
+    <section class="skills">
+        <h1>Technical Skills</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, optio.</p>
+        <div class="skill-row">
+            <div class="skill-col">
+                <h3>Building basic Machine Learning and Neural Networks using Python</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit iure sunt quod reprehenderit
+                    facilis earum voluptate deleniti placeat ea!</p>
+            </div>
+            <div class="skill-col">
+                <h3>Basic Web Development using HTML,CSS&JS</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit iure sunt quod reprehenderit
+                    facilis earum voluptate deleniti placeat ea!</p>
+            </div>
+            <div class="skill-col">
+                <h3>Familiarity with Linux Environment</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit iure sunt quod reprehenderit
+                    facilis earum voluptate deleniti placeat ea!</p>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <a name="Connect"></a>
+    <section class="contact-form">
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>Get In Touch</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email-Id" required>
+                <textarea id="message" rows="4" placeholder="How Can I Help You?"></textarea>
+                <button type="submit">Send</button>
+
+            </form>
+        </div>
+    </section>
+
+    
+    <section class="end-footer">
+        <div class="footer-box">
+            <h3>
+                Contact
+            </h3>
+            <p>Samip Paudel <br>samippaudel75@gmail.com <br><br>Location <br>Lumbini Region, Nepal
+            </p>
+        </div>
+        <!-- <div class="icons">
+            <a href="https://www.facebook.com/samip.paudel.399"><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>Made By Samip Paudel</p> -->
+
+    </section>
+    <div class="icons">
+        <a href="https://www.facebook.com/samip.paudel.399"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        <p>Made By Samip Paudel</p>
+    </div>
+
+
+</body>
+
+
+
+
+<!-- JavaScript For Menu  -->
+
+<script>
+    var navLinks = document.getElementById("NavLinks")
+    function showMenu() {
+        navLinks.style.right = "0px";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px"
+    }
+
+</script>
+
+</html>
